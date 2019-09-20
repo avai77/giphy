@@ -1,0 +1,133 @@
+body{
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    
+}
+#gifs{
+  padding: 50px;
+}
+h1{
+  font-size: 70pt;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  width: 60%;
+  position: relative;
+  display: flex;
+  padding-left: 300px;
+}
+
+#search {
+  width: 100%;
+  border: 3px solid  rgb(112, 0, 204);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+#searchbtn {
+  width: 40%;
+  height: 36px;
+  border: 1px solid rgb(112, 0, 204);
+  background: rgb(112, 0, 204);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.bg-gradient-anim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200%;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-gradient-anim:before,
+.bg-gradient-anim:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200%;
+  width: 100%;
+  z-index: -1;
+  -webkit-animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+  -moz-animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+  -ms-animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+  animation: fade-in 7s ease-in-out 0s infinite alternate forwards;
+}
+
+.bg-gradient-anim:before {
+  background: #892de5;
+  background: -moz-linear-gradient(135deg, #892de5 0%, #e5da52 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #892de5), color-stop(100%, #e5da52));
+  background: -webkit-linear-gradient(135deg, #892de5 0%, #e5da52 100%);
+  background: -o-linear-gradient(135deg, #892de5 0%, #e5da52 100%);
+  background: -ms-linear-gradient(135deg, #892de5 0%, #e5da52 100%);
+  background: linear-gradient(135deg, #892de5 0%, #e5da52 100%);
+}
+
+.bg-gradient-anim:after {
+  background: #e5da52;
+  background: -moz-linear-gradient(135deg, #e5da52 0%, #892de5 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e5da52), color-stop(100%, #892de5));
+  background: -webkit-linear-gradient(135deg, #e5da52 0%, #892de5 100%);
+  background: -o-linear-gradient(135deg, #e5da52 0%, #892de5 100%);
+  background: -ms-linear-gradient(135deg, #e5da52 0%, #892de5 100%);
+  background: linear-gradient(135deg, #e5da52 0%, #892de5 100%);
+  -webkit-animation-direction: alternate-reverse;
+  -moz-animation-direction: alternate-reverse;
+  -ms-animation-direction: alternate-reverse;
+  animation-direction: alternate-reverse;
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
